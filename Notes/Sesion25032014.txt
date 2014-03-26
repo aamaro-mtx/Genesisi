@@ -1,0 +1,47 @@
+mount D c:\debug\
+
+Sistemas de numeracion
+	Decimal
+		0	1	2	3	4	5	6	7	8	9	
+	Binario
+		0	1
+	Hexadecimal
+		0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
+	Octal
+		0	1	2	3	4	5	6	7
+		
+		b4 01 cd 21 cd 20// secuencia de bytes para leer un caracter
+		
+		u +[direcciondememoria] par descompialar codigo maquina a asm
+		
+		n lee.com // guardar archivo
+		rcx
+		: 6 [numero de bytes]
+		w // escribe adisco
+		ya se guardo y se ejecuta desde cmd
+		
+		
+		//leer caracter		
+		mov ah,01
+		int 21
+		
+		//Escribe un caracter en la consola
+		mov ah,2
+		mov  dl,<cod. hex>
+		int 21
+		
+		//termina la ejecucion del programa
+		int 20
+		
+		
+		Ejercicio crear el codigo maquina para dibujar un cuadro en la pantalla de la sig. pantalla.
+		
+		***************
+		*			  *
+		*			  *
+		*			  *
+		*			  *
+		***************
+		
+		
+		
