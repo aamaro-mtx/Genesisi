@@ -23,7 +23,7 @@ Sistemas de numeracion
 		
 		
 		
-		//leer caracter		
+		//leer caracter		RCX
 		mov ah,01
 		int 21
 		
@@ -38,7 +38,7 @@ Sistemas de numeracion
 		mov dl,48
 		int 21
 		int 20
-		;Deberia de imprimir la letra H en consola
+		;DeberiRCa de imprimir la letra H en consola
 		*/
 		
 		//termina la ejecucion del programa
@@ -47,7 +47,7 @@ Sistemas de numeracion
 		
 		Ejercicio crear el codigo maquina para dibujar un cuadro en la pantalla de la sig. pantalla.
 		
-		╔ => c9
+		N => c9
 		╚ => c8
 		║ => ba
 		═ => cd
