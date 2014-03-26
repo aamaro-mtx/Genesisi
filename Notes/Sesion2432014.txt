@@ -1,0 +1,5 @@
+Algoritmo: Conjunto ordenado y finito de pasos para resolver un problema dado.
+
+Crear un algorimto que me permita crear la sig estructura de directorios desde la line de comandos
+Solucion en OneDrive http://1drv.ms/1gw7ANg
+
