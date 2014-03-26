@@ -3,3 +3,14 @@ Algoritmo: Conjunto ordenado y finito de pasos para resolver un problema dado.
 Crear un algorimto que me permita crear la sig estructura de directorios desde la line de comandos
 Solucion en OneDrive http://1drv.ms/1gw7ANg
 
+Intrucciones basicas del debug
+w // escribe a disco a se guardo y se ejecuta desde cmd
+q // sale del debug
+
+comandos basicos de debug
+a =>
+	permite introducir código en forma de nemónicos y su sintaxis es A[dirección]=> A100
+g=> 
+	ejecuta el programa anterior se usa el comando G [dirección], que ejecuta instrucciones a partir de una dirección => g108
+u =>
+	Para desensamblar un programa que se acaba de escribir se utiliza el comando U=> u 100 l9

@@ -12,13 +12,15 @@ Sistemas de numeracion
 		
 		b4 01 cd 21 cd 20// secuencia de bytes para leer un caracter
 		
-		u +[direcciondememoria] par descompialar codigo maquina a asm
+		u +[direcciondememoria] par descompilar codigo maquina a asm
 		
-		n lee.com // guardar archivo
-		rcx
+		n lee.com // dar nombre al archivo pára guardarlo en disco.
+		rcx //instruccion para pasar el tamaño del archivo en bytes
 		: 6 [numero de bytes]
-		w // escribe adisco
-		ya se guardo y se ejecuta desde cmd
+		
+		w // escribe a disco a se guardo y se ejecuta desde cmd
+		q // sale del debug
+		
 		
 		
 		//leer caracter		
@@ -26,9 +28,18 @@ Sistemas de numeracion
 		int 21
 		
 		//Escribe un caracter en la consola
-		mov ah,2
-		mov  dl,<cod. hex>
+		mov ah,2 
+		mov  dl,<cod. hex> 
 		int 21
+		
+		/*
+		Ejemplo 
+		mov ah,2
+		mov dl,48
+		int 21
+		int 20
+		;Deberia de imprimir la letra H en consola
+		*/
 		
 		//termina la ejecucion del programa
 		int 20
@@ -36,6 +47,13 @@ Sistemas de numeracion
 		
 		Ejercicio crear el codigo maquina para dibujar un cuadro en la pantalla de la sig. pantalla.
 		
+		╔ => c9
+		╚ => c8
+		║ => ba
+		═ => cd
+		╗ => bb
+		╝ => bc
+		
 		***************
 		*			  *
 		*			  *
@@ -44,4 +62,47 @@ Sistemas de numeracion
 		***************
 		
 		
-		
+		REGISTROS
+		AX (acumulador). Generalmente se utiliza para almacenar resultados de operaciones
+
+· BX (registro base). Sirve como registro apuntador base o índice.
+
+· CX (registro contador). Se utiliza como constante en operación de iteración, como un contador que automáticamente se incrementa o decrementa de acuerdo con el tipo de instrucción usada.
+
+· DX (registro de datos). Se usa comúnmente se usa como puente para el acceso de datos.
+
+· DS (registro de segmento de datos). Cualquier datos sea variable o no debe encontrase dentro del segmento.
+
+· ES (registro de segmento extra). Este registro permite operaciones sobre cadenas
+
+· SS (registro del segmento de pila). Maneja la posición de memoria donde se encuentra la pila o stack. Esta estructura se utiliza para almacenar datos en forma temporal, tanto de un programa como de las operaciones internas del PC.
+
+· CS (registro del segmento de código). En el CS es donde se encuentra el código ejecutable de cada programa ligado a los diferentes modelos de memoria.
+
+· BP (registro de apuntadores base). Manipula la pila sin afectar el registro de segmento SS.
+
+· SI (registro índice fuente). En conjunto con DI se utiliza para manejar bloques de cadenas en memoria siendo SI el primero y DI el segundo.
+
+· DI (registro índice destino). Usado en conjunto con DI, SI representa la dirección conde se encuentra la cadena y DI la dirección donde será copiada.
+
+· SP (registro del apuntado de la pila). Apunta a un área especifica de memoria que sirve para almacenar datos bajo la estructura LIFO (last in, first out: ultimo en entrar primero en salir), mejor conocido como pila (stack).
+
+· IP (registro apuntador de la siguiente instrucción). Apunta a la siguiente instrucción que será ejecutada en memoria.
+
+· F (Registro de banderas o flags). Es un registro de 16 bits aunque no todos son utilizados, estas son las banderas y sus significados:
+
+o Overflow: NV = no hay desbordamiento; OV= si lo hay.
+
+o Direction: UP = hacia adelante; DN = hacia atrás.
+
+o Interrupts: DI = desactivadas las interrupciones; EI = activadas.
+
+o Sign: PL = positivo; NG = negativo.
+
+o Zero: NZ = no es cero; ZR = si es cero.
+
+o Auxiliary Carry: NA = no hay acarreo auxiliar; AC = hay acarreo auxiliar.
+
+o Parity: PO = paridad non ; PE = paridad par
+
+o Carry: NC = no hay acarreo CY = si lo hay.
