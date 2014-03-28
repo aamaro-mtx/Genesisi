@@ -1,3 +1,4 @@
+a100
 MOV AH,2
 MOV DL,c9
 INT 21
@@ -26,3 +27,10 @@ INT 21
 MOV DL,bc
 INT 21
 INT 20
+
+g
+n square.com
+rcx
+38
+w
+q
