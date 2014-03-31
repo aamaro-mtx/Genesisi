@@ -1,0 +1,24 @@
+Funcion para escribir una cadena de texto
+	
+	MOV AH,09
+	MOV DX,[dir de cadena de texto que finalize en el caracter (24)$ ]
+	INT 21
+	
+	
+	Ejemplo:
+	MOV AH,09
+	MOV DX,
+	INT 21
+	
+	debug
+	a
+	jmp 0
+	e103
+	
+Ejercicio 1 :
+Crear el codigo maquina(algoritmo) que escriba a la pantalla el cuadroo del ejercicio anterior. Utilizar la funcion AH = 9.
+
+
+
+Ejercico 2:
+Crear el codigo maquina que escriba a la consola la estructura basica de una pagina HTML5.
