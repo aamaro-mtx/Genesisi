@@ -2,3 +2,4 @@ Ex001 => Escribir mi nombre usando codigo maquina e interrupcions del DOS.
 Ex002 => Escribir un cuadro a consola usando caracteres de ASCII Extendido.
 Ex003 => Escribir a consola el cuadro del ejercicio Ex002 empleando cadenas y la funcion AH = 9.
 Ex004 => Escribir a consola la estructura basica de una pagina HTML5 empleando cadenas y la funcion AH = 9.
+Ex005 => Escribir a consola la estructura basica de un programa C# empleando cadenas y la funcion AH = 9.
